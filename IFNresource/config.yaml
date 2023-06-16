@@ -1,0 +1,6 @@
+datasets:
+  - id: bulk_coding
+    title: bulk_coding
+    uri: localhost://datasets/bulk_coding.rds
+    description: |
+        Bulk RNA-sequencing of protein coding genes.
