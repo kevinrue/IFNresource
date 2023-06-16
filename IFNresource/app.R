@@ -18,7 +18,8 @@ dataset_fun <- function() {
 }
 
 initial_fun <- function() {
-  NULL
+  x <- yaml::read_yaml("config.yaml")
+  x$initial
 }
 
 app <- iSEEindex(bfc, dataset_fun, initial_fun)
