@@ -22,6 +22,4 @@ initial_fun <- function() {
   x$initial
 }
 
-app <- iSEEindex(bfc, dataset_fun, initial_fun)
-
-shiny::runApp(app, launch.browser = TRUE)
+iSEEindex(bfc, dataset_fun, initial_fun)
