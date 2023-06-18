@@ -23,6 +23,24 @@ datasets:
     description: |
         Mass cytometry 1.
 
+  - id: mass_cytometry_2
+    title: Mass cytometry 2
+    uri: localhost://datasets/mass_cytometry_2.rds
+    description: |
+        Mass cytometry 2.
+
+  - id: mass_cytometry_3
+    title: Mass cytometry 3
+    uri: localhost://datasets/mass_cytometry_3.rds
+    description: |
+        Mass cytometry 3.
+
+  - id: mass_cytometry_4
+    title: Mass cytometry 4
+    uri: localhost://datasets/mass_cytometry_4.rds
+    description: |
+        Mass cytometry 4.
+
 initial:
   - id: bulk_coding
     datasets:
@@ -55,3 +73,27 @@ initial:
     uri: localhost://initial_states/mass_cytometry_1.R
     description: |
       Mass cytometry 1.
+
+  - id: mass_cytometry_2
+    datasets:
+      - mass_cytometry_2
+    title: Mass cytometry 2
+    uri: localhost://initial_states/mass_cytometry_2.R
+    description: |
+      Mass cytometry 2.
+
+  - id: mass_cytometry_3
+    datasets:
+      - mass_cytometry_3
+    title: Mass cytometry 3
+    uri: localhost://initial_states/mass_cytometry_3.R
+    description: |
+      Mass cytometry 3.
+
+  - id: mass_cytometry_4
+    datasets:
+      - mass_cytometry_4
+    title: Mass cytometry 4
+    uri: localhost://initial_states/mass_cytometry_4.R
+    description: |
+      Mass cytometry 4.

@@ -64,7 +64,7 @@ initial <- list(
     VisualChoices = "Color",
     Downsample = TRUE,
     DownsampleResolution = 250,
-    PanelHeight = 500L,
+    PanelHeight = 800L,
     PanelWidth = 4L
   ),
   FeatureAssayPlot(
@@ -118,7 +118,7 @@ element <- c(element, "#Welcome")
 intro <-
   c(
     intro,
-    "Welcome to the interactive tour of the data used in <strong>Figure 1</strong> of <strong>'Single-cell analysis of signalling and transcriptional responses to type I interferons'</strong>.<br/><br/>You will be shown around the different components of the app and learn the basic usage mechanisms by doing. Highlighted elements will respond to the user's actions, while the rest of the user interface will be shaded. You will be prompted at particular spots to perform some actions, which will be marked with \"<strong>Action:</strong>\" text. Please take care to follow these instructions, since later parts of the tour may assume that all the actions from previous steps have been performed.<br/><br/>If you leave the tour at any point and want to return, please click on the '?' in the right hand corner at the top of the page<br/><br/><strong>Action:</strong> click on the 'Next' button to proceed"
+    "Welcome to the interactive tour of the data used in <strong>Figure S5</strong> of <strong>'Single-cell analysis of signalling and transcriptional responses to type I interferons'</strong>.<br/><br/>You will be shown around the different components of the app and learn the basic usage mechanisms by doing. Highlighted elements will respond to the user's actions, while the rest of the user interface will be shaded. You will be prompted at particular spots to perform some actions, which will be marked with \"<strong>Action:</strong>\" text. Please take care to follow these instructions, since later parts of the tour may assume that all the actions from previous steps have been performed.<br/><br/>If you leave the tour at any point and want to return, please click on the '?' in the right hand corner at the top of the page<br/><br/><strong>Action:</strong> click on the 'Next' button to proceed"
   )
 
 element <- c(element, "#allpanels")
@@ -154,7 +154,7 @@ intro <-
 element <- c(element, "#ReducedDimensionPlot1")
 intro <-
   c(intro,
-    "This panel provides a <font color=\"#402ee8\">Reduced dimension plot</font> to allow a low-dimensional representation of the dataset (as shown in Figure S1a). Each point represents a cell, coloured according to the assigned cell type. The plot contains cells from all samples pooled together. <br/><br/>This plot receives any selection made in <font color=\"#402ee8\">Column data table 1</font>, unselected clusters are shaded.<br/><br/>You can also select a cluster by drawing a rectangular or polygon box directly on this plot. This selection will transmit to the panels below. Click on the plot anywhere outside of the selection to clear.<br/><br/><strong>Action:</strong> Draw a gate around the B cell cluster. Scroll down to see this cluster highlighted in the panels below. Deselect by clicking outside of the selection"
+    "This panel provides a <font color=\"#402ee8\">Reduced dimension plot</font> to allow a low-dimensional representation of the dataset (as shown in Figure S5c). Each point represents a cell, coloured according to the assigned cell type. The plot contains cells from all samples pooled together. <br/><br/>This plot receives any selection made in <font color=\"#402ee8\">Column data table 1</font>, unselected clusters are shaded.<br/><br/>You can also select a cluster by drawing a rectangular or polygon box directly on this plot. This selection will transmit to the panels below. Click on the plot anywhere outside of the selection to clear.<br/><br/><strong>Action:</strong> Draw a gate around the B cell cluster. Scroll down to see this cluster highlighted in the panels below. Deselect by clicking outside of the selection"
   )
 
 element <-
@@ -177,7 +177,7 @@ element <- c(element, "#ReducedDimensionPlot2")
 intro <-
   c(
     intro,
-    "This panel shows the <font color=\"#402ee8\">Reduced dimension plot</font> from the previous panel, separating the cells into samples (0, 25, 250, 2500, 25000 U/ml IFN-a2a).<br/><br/>This plot receives the selection made in <font color=\"#402ee8\">Reduced Dimension Plot 1</font>"
+    "This panel shows the <font color=\"#402ee8\">Reduced dimension plot</font> from the previous panel, separating the cells into samples: unstimulated, 25 U/ml IFN-a1, 250 U/ml IFN-a1, 2500 U/ml IFN-a1, 25 U/ml IFN-a2a, 250 U/ml IFN-a2a, 2500 U/ml IFN-a2a, 25 U/ml IFN-a10, 250 U/ml IFN-a10, 2500 U/ml IFN-a10, 25 U/ml IFN-b, 250 U/ml IFN-b, 2500 U/ml IFN-b, 25 U/ml IFN-w, 250 U/ml IFN-w, 2500 U/ml IFN-w<br/><br/>This plot receives the selection made in <font color=\"#402ee8\">Reduced Dimension Plot 1</font>"
   )
 
 element <- c(element, "#ColumnDataPlot1")
