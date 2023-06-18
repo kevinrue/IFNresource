@@ -11,6 +11,18 @@ datasets:
     description: |
         Bulk RNA-sequencing of non-coding genes.
 
+  - id: citeseq
+    title: CITE-seq
+    uri: localhost://datasets/citeseq.rds
+    description: |
+        CITE-seq.
+
+  - id: mass_cytometry_1
+    title: Mass cytometry 1
+    uri: localhost://datasets/mass_cytometry_1.rds
+    description: |
+        Mass cytometry 1.
+
 initial:
   - id: bulk_coding
     datasets:
@@ -27,3 +39,19 @@ initial:
     uri: localhost://initial_states/bulk_noncoding.R
     description: |
       Initial configuration for the Bulk non-coding data set.
+
+  - id: citeseq
+    datasets:
+      - citeseq
+    title: CITE-seq
+    uri: localhost://initial_states/citeseq.R
+    description: |
+      Initial configuration for the CITE-seq data set.
+
+  - id: mass_cytometry_1
+    datasets:
+      - mass_cytometry_1
+    title: Mass cytometry 1
+    uri: localhost://initial_states/mass_cytometry_1.R
+    description: |
+      Mass cytometry 1.
