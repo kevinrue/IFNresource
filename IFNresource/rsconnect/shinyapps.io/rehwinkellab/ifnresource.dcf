@@ -5,7 +5,7 @@ account: rehwinkellab
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9320699
-bundleId: 7359435
+bundleId: 7418673
 url: https://rehwinkellab.shinyapps.io/ifnresource/
-when: 1687104057.72503
-lastSyncTime: 1687104057.72507
+when: 1688480185.39862
+lastSyncTime: 1688480185.39866
