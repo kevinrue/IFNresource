@@ -3,25 +3,25 @@ datasets:
     title: Bulk RNAseq coding Figure 3
     uri: localhost://datasets/bulk_coding.rds
     description: |
-        Bulk RNaseq (coding) analysis of PBMCs treated with 250 U/ml of IFN-a1, IFN-a2a, IFN-a10, IFN-b or IFN-w for 24 h.
-
+        Bulk RNaseq (coding) analysis of PBMCs treated with 250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω for 24 h.
+,
   - id: bulk_noncoding
     title: Bulk RNAseq noncoding Figure 3
     uri: localhost://datasets/bulk_noncoding.rds
     description: |
-        Bulk RNaseq (non-coding) analysis of PBMCs treated with 250 U/ml of IFN-a1, IFN-a2a, IFN-a10, IFN-b or IFN-w for 24 h.
+        Bulk RNaseq (non-coding) analysis of PBMCs treated with 250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω for 24 h.
 
   - id: citeseq
     title: Single cell RNAseq Figure 4
     uri: localhost://datasets/citeseq.rds
     description: |
-        Single cell RNAseq analysis of PBMCs treated with 0, 25, 250, 2500 U/ml of IFN-a1, IFN-a2a, IFN-a10, IFN-b or IFN-w for 24 h.
+        Single cell RNAseq analysis of PBMCs treated with 0, 25, 250, 2500 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω for 24 h.
 
   - id: mass_cytometry_1
     title: Mass cytometry Figure 1
     uri: localhost://datasets/mass_cytometry_1.rds
     description: |
-        Mass cytometry analysis of PBMCs treated with 0, 25, 250, 2500, 25000 U/ml IFN-a2a for 15 min.
+        Mass cytometry analysis of PBMCs treated with 0, 25, 250, 2500, 25000 U/ml IFN-α2a for 15 min.
 
   - id: mass_cytometry_2
     title: Mass cytometry Figure 2
@@ -33,13 +33,13 @@ datasets:
     title: Mass cytometry Figure S4
     uri: localhost://datasets/mass_cytometry_3.rds
     description: |
-        Mass cytometry analysis of PBMCs treated with 0, 25, 250, 2500 U/ml of IFN-a1, IFN-a2a, IFN-a10, IFN-b or IFN-w for 90 min.
+        Mass cytometry analysis of PBMCs treated with 0, 25, 250, 2500 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω for 90 min.
 
   - id: mass_cytometry_4
     title: Mass cytometry Figure S5
     uri: localhost://datasets/mass_cytometry_4.rds
     description: |
-        Mass cytometry analysis of PBMCs treated with 0, 25, 250, 2500 U/ml of IFN-a1, IFN-a2a, IFN-a10, IFN-b or IFN-w for 24 h.
+        Mass cytometry analysis of PBMCs treated with 0, 25, 250, 2500 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω for 24 h.
 
 initial:
   - id: bulk_coding
