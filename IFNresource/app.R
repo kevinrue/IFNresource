@@ -22,4 +22,4 @@ initial_fun <- function() {
   x$initial
 }
 
-iSEEindex(bfc, dataset_fun, initial_fun)
+iSEEindex(bfc, dataset_fun, initial_fun, default.add = FALSE)
