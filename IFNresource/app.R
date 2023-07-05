@@ -22,4 +22,6 @@ initial_fun <- function() {
   x$initial
 }
 
+shiny::addResourcePath("images", "www/images/")
+
 iSEEindex(bfc, dataset_fun, initial_fun, default.add = FALSE)

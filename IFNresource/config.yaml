@@ -7,7 +7,11 @@ datasets:
         250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
         for 24 h.
 
-        Select bulk coding from the Configure and launch tab for the guided tour.
+        Select `Bulk coding` from the 'Configure and launch' tab for the guided tour.
+
+        <center>
+        <img src="images/figure_3.png" alt="figure_3.png" />
+        </center>
 
   - id: bulk_noncoding
     title: Bulk RNAseq noncoding Figure 3
