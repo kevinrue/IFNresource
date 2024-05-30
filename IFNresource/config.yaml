@@ -7,7 +7,7 @@ datasets:
         250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
         for 24 h.
 
-        Select `Bulk coding` from the 'Configure and launch' tab for the guided tour.
+        Select `Bulk coding` from the *Configure and launch* tab for the guided tour.
 
         <center>
         <img src="images/figure_3.png" alt="figure_3.png" />
@@ -21,7 +21,11 @@ datasets:
         250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
         for 24 h.
 
-        Select bulk non-coding from the Configure and launch tab for the guided tour.
+        Select `Bulk non-coding` from the *Configure and launch* tab for the guided tour.
+
+        <center>
+        <img src="images/figure_3.png" alt="figure_3.png" />
+        </center>
 
   - id: citeseq
     title: Single cell RNAseq Figure 4
@@ -31,7 +35,11 @@ datasets:
         with 0, 25, 250, 2500 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
         for 24 h.
 
-        Select CITE-seq from the Configure and launch tab for the guided tour.
+        Select `CITE-seq` from the *Configure and launch* tab for the guided tour.
+
+        <center>
+        <img src="images/figure_4.png" alt="figure_4.png" />
+        </center>
 
   - id: mass_cytometry_1
     title: Mass cytometry Figure 1
@@ -41,7 +49,11 @@ datasets:
         with 0, 25, 250, 2500, 25000 U/ml IFN-α2a
         for 15 min.
 
-        Select mass cytometry 1 from the Configure and launch tab for the guided tour.
+        Select `Mass cytometry 1` from the *Configure and launch* tab for the guided tour.
+
+        <center>
+        <img src="images/figure_1.png" alt="figure_1.png" />
+        </center>
 
   - id: mass_cytometry_2
     title: Mass cytometry Figure 2
@@ -51,7 +63,11 @@ datasets:
         with 250 U/ml of different type I IFNs
         for 15 min.
 
-        Select mass cytometry 2 from the Configure and launch tab for the guided tour.
+        Select `Mass cytometry 2` from the *Configure and launch* tab for the guided tour.
+
+        <center>
+        <img src="images/figure_2.png" alt="figure_2.png" />
+        </center>
 
   - id: mass_cytometry_3
     title: Mass cytometry Figure S4
@@ -61,7 +77,11 @@ datasets:
         with 0, 25, 250, 2500 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
         for 90 min.
 
-        Select mass cytometry 3 from the Configure and launch tab for the guided tour.
+        Select `Mass cytometry 3` from the *Configure and launch* tab for the guided tour.
+
+        <center>
+        <img src="images/figure_s4.png" alt="figure_s4.png" />
+        </center>
 
   - id: mass_cytometry_4
     title: Mass cytometry Figure S5
@@ -71,7 +91,11 @@ datasets:
         with 0, 25, 250, 2500 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
         for 24 h.
 
-        Select mass cytometry 4 from the Configure and launch tab for the guided tour.
+        Select `Mass cytometry 4` from the *Configure and launch* tab for the guided tour.
+
+        <center>
+        <img src="images/figure_s5.png" alt="figure_s5.png" />
+        </center>
 
 initial:
   - id: bulk_coding
