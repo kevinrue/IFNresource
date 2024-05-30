@@ -4,12 +4,21 @@ rds_files <- list.files(path = ".", pattern = ".rds$")
 rds_data <- lapply(rds_files, readRDS)
 all_data <- do.call("rbind", rds_data)
 
-highlight_ranges <-
+highlight_ranges <- data.frame(
+    from = c(
+      as.POSIXct("2024-05-06 00:00:00 UTC"),
+      as.POSIXct("2024-05-20 00:00:00 UTC")
+    ),
+    until = c(
+      as.POSIXct("2024-05-06 23:59:59 UTC"),
+      as.POSIXct("2024-05-20 23:59:59 UTC")
+    )
+  )
 
 ggplot() +
-  geom_line(aes(time, connect_count), metrics_df) +
+  geom_line(aes(time, connect_count), all_data) +
   geom_rect(
-    aes(xmin = from, xmax = until), ymin = -Inf, ymax = Inf,
+    aes(xmin = from, xmax = until), ymin = -Inf, ymax = -Inf,
     highlight,
     color = "red",
     fill = "red",
