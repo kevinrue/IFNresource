@@ -39,6 +39,22 @@ library(ggplot2)
 #   interval = "60s"
 # )
 
+metrics_df <- rsconnect::showMetrics(
+  metricSeries = "docker_container_mem",
+  metricNames = c("total_rss"),
+  appName = "ifnresource",
+  account = "rehwinkellab",
+  server="shinyapps.io",
+  from = as.numeric(as.POSIXct("2025-04-01 00:00:00 UTC")),
+  until = as.numeric(as.POSIXct("2025-04-30 23:59:59 UTC")),
+  interval = "60s"
+)
+
+metrics_df %>%
+  filter(total_rss > 0) %>%
+  mutate(total_rss_gb = utils:::format.object_size(total_rss, "GB"))
+  mutate(total_rss_gb = total_rss / (1024**2))
+
 # head(metrics_df); tail(metrics_df)
 # sort(unique(metrics_df$connect_count))
 # subset(metrics_df, connect_count > 0 & connect_count < 1)
