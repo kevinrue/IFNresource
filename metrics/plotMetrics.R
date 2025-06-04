@@ -15,15 +15,20 @@ highlight_ranges <- data.frame(
     )
   )
 
+all_data %>% head()
+all_data <- all_data %>%
+  tidyr::separate(time, c("year", "month", "day"), "-", remove = FALSE)
+
 ggplot() +
   geom_line(aes(time, connect_count), all_data) +
-  geom_rect(
-    aes(xmin = from, xmax = until), ymin = -Inf, ymax = -Inf,
-    highlight,
-    color = "red",
-    fill = "red",
-    alpha = 0.1
-  ) +
+  # geom_rect(
+  #   aes(xmin = from, xmax = until), ymin = -Inf, ymax = -Inf,
+  #   highlight_ranges,
+  #   color = "red",
+  #   fill = "red",
+  #   alpha = 0.1
+  # ) +
+  facet_wrap(~year, scales = "free_x", ncol = 1) +
   theme_minimal() +
   theme(
     axis.text.x = element_text(angle = 90)
