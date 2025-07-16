@@ -1,27 +1,39 @@
 datasets:
-  - id: bulk_coding
-    title: Bulk RNAseq coding Figure 3
-    uri: localhost://datasets/bulk_coding.rds
+  # - id: bulk_coding
+  #   title: Bulk RNAseq coding Figure 3
+  #   uri: localhost://datasets/bulk_coding.rds
+  #   description: |
+  #       Bulk RNaseq (coding) analysis of PBMCs treated with
+  #       250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
+  #       for 24 h.
+  #
+  #       Select `Bulk coding` from the *Configure and launch* tab for the guided tour.
+  #
+  #       <center>
+  #       <img src="images/figure_3.png" alt="figure_3.png" />
+  #       </center>
+
+  # - id: bulk_noncoding
+  #   title: Bulk RNAseq noncoding Figure 3
+  #   uri: localhost://datasets/bulk_noncoding.rds
+  #   description: |
+  #       Bulk RNaseq (non-coding) analysis of PBMCs treated with
+  #       250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
+  #       for 24 h.
+  #
+  #       Select `Bulk non-coding` from the *Configure and launch* tab for the guided tour.
+  #
+  #       <center>
+  #       <img src="images/figure_3.png" alt="figure_3.png" />
+  #       </center>
+
+  - id: bulk
+    title: Bulk RNAseq Figure 3
+    uri: localhost://datasets/bulk.rds
     description: |
-        Bulk RNaseq (coding) analysis of PBMCs treated with
-        250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
-        for 24 h.
+        Bulk RNA-seq of type I IFN-stimulated PBMCs.
 
-        Select `Bulk coding` from the *Configure and launch* tab for the guided tour.
-
-        <center>
-        <img src="images/figure_3.png" alt="figure_3.png" />
-        </center>
-
-  - id: bulk_noncoding
-    title: Bulk RNAseq noncoding Figure 3
-    uri: localhost://datasets/bulk_noncoding.rds
-    description: |
-        Bulk RNaseq (non-coding) analysis of PBMCs treated with
-        250 U/ml of IFN-α1, IFN-α2a, IFN-α10, IFN-β or IFN-ω
-        for 24 h.
-
-        Select `Bulk non-coding` from the *Configure and launch* tab for the guided tour.
+        Select `Bulk` from the *Configure and launch* tab for the guided tour.
 
         <center>
         <img src="images/figure_3.png" alt="figure_3.png" />
@@ -98,21 +110,29 @@ datasets:
         </center>
 
 initial:
-  - id: bulk_coding
-    datasets:
-      - bulk_coding
-    title: Bulk coding
-    uri: localhost://initial_states/bulk_coding.R
-    description: |
-      Initial configuration for the Bulk coding data set.
+  # - id: bulk_coding
+  #   datasets:
+  #     - bulk_coding
+  #   title: Bulk coding
+  #   uri: localhost://initial_states/bulk_coding.R
+  #   description: |
+  #     Initial configuration for the Bulk coding data set.
 
-  - id: bulk_noncoding
+  # - id: bulk_noncoding
+  #   datasets:
+  #     - bulk_noncoding
+  #   title: Bulk non-coding
+  #   uri: localhost://initial_states/bulk_noncoding.R
+  #   description: |
+  #     Initial configuration for the Bulk non-coding data set.
+
+  - id: bulk
     datasets:
-      - bulk_noncoding
-    title: Bulk non-coding
-    uri: localhost://initial_states/bulk_noncoding.R
+      - bulk
+    title: Bulk
+    uri: localhost://initial_states/bulk.R
     description: |
-      Initial configuration for the Bulk non-coding data set.
+      Initial configuration for the Bulk RNA-seq data set.
 
   - id: citeseq
     datasets:

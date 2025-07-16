@@ -46,11 +46,32 @@ header <- fluidRow(shinydashboard::box(width = 12L,
 ))
 
 footer <- fluidRow(shinydashboard::box(width = 12L,
-  p("This is a example footer. A great place for copyright statements and outros.", style="text-align: center;"),
+  p("A collaboration between the",
+    a(
+      href="https://www.imm.ox.ac.uk/research/research-groups/rehwinkel-group-nucleic-acid-sensing",
+      target="_blank",
+      "Rehwinkel Group: Nucleic Acid Sensing"
+    ),
+    "and the",
+    a(
+      href="https://www.imm.ox.ac.uk/research/research-groups/sims-group-computational-genomics",
+      target="_blank",
+      "Sims Group: Computational Genomics"
+    ),
+    "at the MRC Weatherall Institute of Molecular Medicine, University of Oxford.",
+    style="text-align: center;"
+  ),
   p(
     "© 2023 iSEE.",
     a("Artistic-2.0", href = "https://opensource.org/license/artistic-2-0/", target="_blank"),
     style="text-align: center;")
 ))
 
-iSEEindex(bfc, dataset_fun, initial_fun, default.add = FALSE, body.header = header, body.footer = footer)
+iSEEindex(
+  bfc,
+  dataset_fun,
+  initial_fun,
+  default.add = FALSE,
+  app.title = "IFNresource",
+  body.header = header,
+  body.footer = footer)
