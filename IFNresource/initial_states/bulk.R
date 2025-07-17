@@ -1,3 +1,10 @@
+# library ----
+
+library(iSEE)
+
+# initial ----
+
+# set up layout and defaults
 initial <- list(
   FeatureAssayPlot(
     Assay = "TPM",
@@ -31,7 +38,9 @@ initial <- list(
   )
 )
 
-# Define the tour steps
+# tour ----
+
+# setting up tour
 element <- intro <- character(0)
 
 element <- c(element, "#Welcome")
